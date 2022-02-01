@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriceShare</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Price<span>Share</span> <img src="images/fireball.png" alt="priceshare" width="30" height="30"> </a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="page2.html">Про додаток</a></li>
+                    <li><a href="training.html">Навчання</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="contacts.html">Контакти</a></li>
+                    <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">Завантажуй додаток</p>
+                <h1 class="app_name">PriceShare</h1>
+
+                <div class="hero-cta">
+                    <a href="https://play.google.com/store/apps/details?id=com.vip.priceshare" class="primary-cta" target="_blank">FREE</a>
+                    <a href="https://youtu.be/W-LPhvbdLLw" class="watch-video-cta" target="_blank">
+                        <img src="images/watch.svg" alt="Watch a video">Дивитись відео
+                    </a>
+                </div>
+            </div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/W-LPhvbdLLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Усі ціни додаються лише користувачами додатку</li>
+                <li>Порівняння цін у різних магазинах</li>
+                <li>Можливість пошуку цін поруч</li>
+                <li>Можливість обрати валюту</li>
+                <li>Усі дані зберігаються в реальному часі</li>
+                <li>Внесені ціни доступні для перегляду усім користувачам</li>
+            </ul>
+
+            <img src="images/holding-phone.jpg" alt="Man holding phone">
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+                <li>
+                    <img src="images/person.jpg" alt="Person">
+
+                    <blockquote>"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore"</blockquote>
+                    <cite>- Jane Doe</cite>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2646.4751653881444!2d22.71000741547918!3d48.44741193750969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739ab853e417159%3A0xd7c8123243d8f92e!2z0LLRg9C70LjRhtGPINCa0LDRgNC_0LXQvdC60LAt0JrQsNGA0L7Qs9C-LCAyNCwg0JzRg9C60LDRh9C10LLQviwg0JfQsNC60LDRgNC_0LDRgtGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA4OTYxMQ!5e0!3m2!1suk!2sua!4v1638020584852!5m2!1suk!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+              nav = document.querySelector('nav')
+              mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+</html>
